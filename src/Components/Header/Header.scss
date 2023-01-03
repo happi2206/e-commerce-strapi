@@ -1,0 +1,43 @@
+.body {
+  background-color: #eeddcc;
+  height: 100vh;
+  position: relative;
+  overflow: hidden;
+
+  img {
+    position: absolute;
+    z-index: 1;
+
+    &.rectangle2 {
+      bottom: 0;
+      width: 15%;
+    }
+    &.accessories {
+      bottom: -11.875rem;
+    }
+    &.dots {
+      width: 8%;
+      top: 5.3rem;
+    }
+    &.rectangle {
+      top: 0;
+      right: 0;
+    }
+  }
+  :not(img) {
+    z-index: 20;
+    position: relative;
+  }
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  h1 {
+    font-size: 5.5rem;
+    font-weight: 700;
+    line-height: 7.125rem;
+    letter-spacing: 0em;
+    text-align: left;
+  }
+}
