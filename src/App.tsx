@@ -5,9 +5,8 @@ import { createBrowserRouter, Outlet, RouterProvider } from 'react-router-dom';
 import Home from './pages/Home/Home';
 import Product from './pages/Product/Product';
 import Products from './pages/Products/Products';
-import Footer from './Components/Footer/Footer';
-import Navigation from './Components/Navigation/Navigation';
-import Header from './Components/Header/Header';
+import Footer from './Components/Footer';
+import Header from './Components/Header';
 const App = () => {
   const Layout = () => {
     return (
@@ -28,7 +27,7 @@ const App = () => {
           element: <Home />,
         },
         {
-          path: '/products/:id',
+          path: '/products',
           element: <Products />,
         },
         {

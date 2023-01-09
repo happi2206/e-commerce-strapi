@@ -1,5 +1,13 @@
+// variables
+@import 'partials/variables';
+// fonts
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&display=swap');
 
+// colors
+
+// components(button, cards)
+
+// utilities(margin, padding)
 body {
   font-family: 'Lato', sans-serif;
   padding: 0;
@@ -7,14 +15,14 @@ body {
   box-sizing: border-box;
 }
 button {
-  background-color: #34251f;
+  background-color: $primary;
   border: 0;
-  padding: 0.7rem 1.1rem;
+  padding: $base-padding 2.1rem;
   color: #fff;
 }
 
 .container {
-  padding: 1.825rem 8.875rem;
+  padding: 0rem $container-padding;
 }
 
 @media (prefers-color-scheme: light) {
