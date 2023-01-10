@@ -1,5 +1,3 @@
-import React from 'react';
-import './FeaturedProducts.scss';
 const FeaturedProductsCard = () => {
   return (
     <div>

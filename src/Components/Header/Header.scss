@@ -1,6 +1,6 @@
+@import '../../partials/variables';
 .body {
-  background-color: $secondary;
-  height: 100vh;
+  background-color: #eeddcc;
   position: relative;
 
   img {
@@ -26,29 +26,5 @@
   :not(img) {
     z-index: 20;
     position: relative;
-  }
-}
-
-.content {
-  display: flex;
-  justify-content: space-between;
-
-  h1 {
-    font-size: 5.5rem;
-    font-weight: 700;
-    line-height: 7.125rem;
-    letter-spacing: 0em;
-    text-align: left;
-  }
-
-  .image {
-    width: 70%;
-  }
-
-  img {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    border-bottom-left-radius: 30%;
   }
 }

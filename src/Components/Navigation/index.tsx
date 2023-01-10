@@ -1,56 +1,33 @@
 import React, { useState } from 'react';
 
 import { Link } from 'react-router-dom';
-import './Navigation.scss';
 import { Icon } from '@iconify/react';
-// import Cart from '../Cart/Cart';
-// import { useSelector } from 'react-redux';
+import Links from '../Links';
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
   // const products = useSelector((state) => state.cart.products);
 
   return (
-    <div className="navbar">
-      <div className="wrapper">
-        <div className="left">
-          <div className="item">
-            <p className="logo">THEA’S</p>
+    <div className="lg:px-32 px-10 pt-10">
+      <div className="flex items-center justify-between">
+        <div className="flex items-center space-x-3">
+          <div className="flex items-center">
+            <p className="text-lg font-black">THEA’S</p>
           </div>
         </div>
 
-        <div className="center">
-          <div className="item">
-            <Link className="link" to="/products/2">
-              Men
-            </Link>
-          </div>
-          <div className="item">
-            <Link className="link" to="/products/1">
-              Women
-            </Link>
-          </div>
+        <Links />
 
-          <div className="item">
-            <Link className="link" to="/products/3">
-              Kids
-            </Link>
-          </div>
-
-          <div className="item">
-            <Link className="link" to="/products/3">
-              Collection
-            </Link>
-          </div>
-        </div>
-
-        <div className="right">
-          <span>
+        <div className="flex items-center space-x-3">
+          <span className="relative mt-3">
             <Icon icon="lucide:shopping-bag" width={25} />
 
-            <div className="alertsymbol">1</div>
+            <div className="-top-7 -right-4 w-3 h-3 absolute  bg-red-500 text-[9px] text-white rounded-[50%] flex items-center justify-center">
+              1
+            </div>
           </span>
-          <div className="item">
+          <div className="border text-sm md:text-base font-bold  border-black px-5 py-2">
             <Link className=" loginlink" to="/">
               Login
             </Link>
