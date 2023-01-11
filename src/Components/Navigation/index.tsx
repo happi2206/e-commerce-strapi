@@ -6,8 +6,6 @@ import Links from '../Links';
 
 const Navigation = () => {
   const [open, setOpen] = useState(false);
-  // const products = useSelector((state) => state.cart.products);
-
   return (
     <div className="lg:px-32 px-10 pt-10">
       <div className="flex items-center justify-between">
@@ -34,7 +32,6 @@ const Navigation = () => {
           </div>
         </div>
       </div>
-      {/* {open && <Cart />} */}
     </div>
   );
 };
