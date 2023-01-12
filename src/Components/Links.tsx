@@ -9,7 +9,7 @@ const links = [
 
 const Links = ({ isFooter }: { isFooter?: boolean }) => {
   return (
-    <div className="hidden sm:flex items-center w-6/12 md:w-4/12 justify-between uppercase font-bold ">
+    <div className="hidden sm:flex items-center w-6/12 md:w-5/12 justify-between uppercase font-bold ">
       {links.map((link, index) => (
         <div
           className={`item cursor-pointer text-sm md:text-base ${

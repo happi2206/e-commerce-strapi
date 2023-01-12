@@ -3,7 +3,7 @@ import Links from '../Links';
 import SubscribeInput from '../SubscribeInput';
 const Footer = () => {
   return (
-    <div className="bg-[#2D1F1A] py-10 text-white">
+    <footer className="bg-[#2D1F1A] py-10 text-white">
       <div className="flex justify-center">
         <Links isFooter />
       </div>
@@ -39,7 +39,7 @@ const Footer = () => {
           </div>{' '}
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 

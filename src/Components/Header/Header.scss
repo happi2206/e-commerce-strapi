@@ -1,9 +1,8 @@
 @import '../../partials/variables';
 .body {
   background-color: #eeddcc;
-  position: relative;
 
-  img {
+  img.absimg {
     position: absolute;
     z-index: 1;
 
@@ -23,7 +22,7 @@
       right: 0;
     }
   }
-  :not(img) {
+  .mainimg {
     z-index: 20;
     position: relative;
   }

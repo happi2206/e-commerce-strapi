@@ -3,25 +3,31 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { Icon } from '@iconify/react';
 import Links from '../Links';
+import Cart from '../Cart';
 
 const Navigation = () => {
-  const [open, setOpen] = useState(false);
+  const [openCart, setOpenCart] = useState(false);
   return (
-    <div className="lg:px-32 px-10 pt-10">
+    <nav className="pagecontainer pt-10 ">
       <div className="flex items-center justify-between">
         <div className="flex items-center space-x-3">
           <div className="flex items-center">
-            <p className="text-lg font-black">THEA’S</p>
+            <p className="text-lg font-black cursor-pointer">
+              <Link to="/">THEA’S</Link>
+            </p>
           </div>
         </div>
 
         <Links />
 
         <div className="flex items-center space-x-3">
-          <span className="relative mt-3">
+          <span
+            className="relative mt-3 cursor-pointer z-50"
+            onClick={() => setOpenCart(!openCart)}
+          >
             <Icon icon="lucide:shopping-bag" width={25} />
 
-            <div className="-top-7 -right-4 w-3 h-3 absolute  bg-red-500 text-[9px] text-white rounded-[50%] flex items-center justify-center">
+            <div className="-top-3 -right-2 w-3 h-3 absolute  bg-red-500 text-[9px] text-white rounded-[50%] flex items-center justify-center">
               1
             </div>
           </span>
@@ -32,7 +38,9 @@ const Navigation = () => {
           </div>
         </div>
       </div>
-    </div>
+
+      {openCart && <Cart />}
+    </nav>
   );
 };
 

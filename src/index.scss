@@ -18,12 +18,21 @@ body {
   margin: 0;
   box-sizing: border-box;
   color: $primary;
+  background-color: #e9e2e0;
 }
+
 button {
-  background-color: $primary;
-  border: 0;
-  padding: $base-padding 2.1rem;
-  color: #fff;
+  @apply font-semibold  justify-center text-center md:text-sm cursor-pointer text-xs  hover:opacity-80 flex items-center space-x-2;
+
+  &.outlineprimary {
+    @apply bg-transparent border px-5 py-3 border-primary;
+  }
+  &.primary {
+    @apply bg-primary px-5 py-3  text-white border border-primary;
+  }
+  &.small {
+    @apply bg-primary px-4 py-2  text-white border border-primary;
+  }
 }
 
 .ruhl {
@@ -35,6 +44,9 @@ button {
   opacity: 20%;
 }
 
+.pagecontainer {
+  @apply xl:px-32 px-10;
+}
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
