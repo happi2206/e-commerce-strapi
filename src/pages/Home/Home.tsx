@@ -1,5 +1,5 @@
 import React from 'react';
-import NewCollection from '../../Components/Home/NewCollection';
+import NewCollection from '../../components/Home/NewCollection';
 
 const Home = () => {
   return (

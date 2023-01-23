@@ -1,5 +1,5 @@
 import React from 'react';
-import FeaturedProducts from '../../Components/FeaturedProducts';
+import FeaturedProducts from '../../components/FeaturedProducts';
 
 const Products = () => {
   return (

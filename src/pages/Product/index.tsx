@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import Button from '../../Components/Base/Button';
+import Button from '../../components/Base/Button';
 
 const Product = () => {
   const images = [
@@ -21,6 +21,7 @@ const Product = () => {
       setQuantity(quantity + 1);
     }
   };
+
   return (
     <section className="pagecontainer lg:h-screen mb-20">
       <div className="shadow-2xl rounded p-10 w-full mt-10">
