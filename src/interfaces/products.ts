@@ -1,3 +1,15 @@
+interface IImg {
+  data: {
+    attributes: {
+      formats: {
+        thumbnail: {
+          url: string;
+        };
+      };
+    };
+  }[];
+}
+
 export interface IProducts {
   attributes: {
     title: string;
@@ -6,6 +18,8 @@ export interface IProducts {
     isNew: boolean;
     createdAt: string;
     updatedAt: string;
+    img: IImg;
     publishedAt: string;
   };
+  id: string;
 }

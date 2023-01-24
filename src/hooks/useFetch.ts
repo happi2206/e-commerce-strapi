@@ -1,8 +1,9 @@
 import { useEffect, useState } from 'react';
 import { apiRequest } from '../apiRequest';
+import { IProducts } from '../interfaces/products';
 
 const useFetch = (url: string) => {
-  const [data, setData] = useState(null);
+  const [data, setData] = useState<IProducts[] | IProducts>([]);
 
   useEffect(() => {
     const fetchData = async () => {
