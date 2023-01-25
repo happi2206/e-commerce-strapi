@@ -4,7 +4,8 @@ import { IProducts } from '../interfaces/products';
 
 const useFetch = (url: string) => {
   const [data, setData] = useState<IProducts[] | IProducts>([]);
-
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(false);
   useEffect(() => {
     const fetchData = async () => {
       try {
