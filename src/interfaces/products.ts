@@ -21,5 +21,6 @@ export interface IProducts {
     img: IImg;
     publishedAt: string;
   };
+  quantity?: number;
   id: string;
 }
